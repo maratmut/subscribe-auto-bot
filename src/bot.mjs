@@ -15,7 +15,7 @@ bot.on(['/start'], (msg) => {
     until_date: Math.floor(Date.now() / 1000) + 60 * 60 * 24 * 365 // На год вперед
   }).then(() => {
     // Пишем сообщение об успешной подписке
-    bot.sendMessage(msg.chat.id, 'Вы успешно подписались на наш канал!');
+    bot.sendMessage(msg.chat.id, 'Вы успешно подписались на канал!');
   }).catch((error) => {
     console.error(error);
     bot.sendMessage(msg.chat.id, 'Произошла ошибка при подписке. Попробуйте позже.');
